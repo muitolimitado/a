@@ -1,0 +1,37 @@
+{
+  "name": "hype-store-customer-backend",
+  "version": "1.0.0",
+  "description": "Backend da área do cliente com Discord OAuth",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "node src/database/migrate.js"
+  },
+  "keywords": [
+    "discord",
+    "oauth",
+    "jwt",
+    "customer-area"
+  ],
+  "author": "Hype Store",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "axios": "^1.6.2",
+    "sqlite3": "^5.1.6",
+    "bcryptjs": "^2.4.3",
+    "express-rate-limit": "^7.1.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
